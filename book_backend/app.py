@@ -43,6 +43,7 @@ class BookApi(MethodView):
                 'message': '数据查询成功',
                 'results': results
             }
+
         book: Book = Book.query.get(book_id)
         return {
             'status': 'success',
